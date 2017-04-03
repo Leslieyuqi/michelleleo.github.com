@@ -145,6 +145,7 @@
 #footer{
 	width: 300px;
 	height: 225px;
+	text-align: center;
 }
 
 #footer_big{
@@ -175,10 +176,6 @@
 	margin-top: 30px;
 }
 
-#footer_big p{
-	margin-left: 43px;
-}
-
 .footer_small div{
 	width: 35px;
 	height: 35px;
@@ -189,5 +186,4 @@
 
 .footer_small p{
 	display: inline;
-	margin-left: 20px;
 }

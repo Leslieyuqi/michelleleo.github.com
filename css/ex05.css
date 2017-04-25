@@ -1,0 +1,451 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2017-04-24 20:43:45
+ * @version $Id$
+ */
+
+#container{
+	width: 685px;
+	height: 315px;
+	position: relative;
+}
+
+#header{
+	width: 685px;
+	height: 100px;
+}
+
+#hd-nav{
+	width: 686px;
+	height: 25px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#hd-nav-br{
+	width: 80px;
+	height: 23px;
+	background: linear-gradient(#2F94CE,#1B88C4);
+	border-radius: 5px 5px/5px 5px 0 0;
+	color: #fff;
+	text-align: center;
+	line-height: 23px;
+	font-family: "宋体";
+	font-weight: bold;
+	font-size: 15px;
+}
+
+#hd-nav-zi{
+	width: 20px;
+	height: 20px;
+	background: linear-gradient(#FC7D18,#FF4002);
+	border-radius: 5px;
+	margin-left: 5px;
+	text-align: center;
+	color: #fff;
+	font-size: 15px;
+}
+
+#hd-nav-bt{
+	width: 686px;
+	height: 2px;
+	background: #1B88C4;
+	box-sizing: border-box;
+}
+
+#hd-info{
+	width: 685px;
+	height: 50px;
+	background: linear-gradient(#FEFFFF,#F3F4F4);
+	border-left: 1px solid #CBCBCB;
+	border-right: 1px solid #CBCBCB;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+#hd-info p{
+	display: inline;
+	text-align: center;
+	line-height: 15px;
+}
+
+#hd-info i{
+	display: inline;
+}
+
+.hd-info-bold{
+	color: #CF0000;
+	font-family: "宋体";
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.hd-info-nb{
+	color: #444;
+	font-family: "MS Mincho";
+	font-size: 13px;
+}
+
+#hd-info-fr1{
+	width: 130px;
+	height: 15px;
+	margin-left: 10px;
+}
+
+.fa-long-arrow-right{
+	color: #CF0000;
+}
+
+#hd-info-fr1 .hd-info-nb{
+	color: #CF0000;
+	margin-left: -5px;
+}
+
+#hd-info-fr2{
+	width: 500px;
+	height: 15px;
+	margin-left: 20px;
+}
+
+#hd-info-fr3{
+	width: 120px;
+	height: 15px;
+	margin-left: 10px;
+}
+
+#hd-info-fr4{
+	width: 90px;
+	height: 15px;
+	margin-left: 25px;
+}
+
+#hd-info-fr4 .hd-info-bold{
+	color: #000;
+}
+
+#hd-info-fr5{
+	width: 60px;
+	height: 15px;
+	margin-left: 25px;
+}
+
+#hd-info-fr6{
+	width: 85px;
+	height: 15px;
+	margin-left: 25px;
+}
+
+#hd-info-fr6 .hd-info-bold{
+	color: #000;
+}
+
+#hd-print{
+	width: 685px;
+	height: 25px;
+	background: #FFFBDE;
+	border: 1px solid #CECBCE;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.hd-print-inco{
+	width: 50px;
+	height: 15px;
+	margin-top: 2px;
+	margin-left: 10px;
+	margin-right: 5px;
+}
+
+.hd-print-inco p{
+	display: inline;
+	text-align: center;
+	font-family: "宋体";
+	font-size: 15px;
+	text-align: center;
+	line-height: 15px;
+	color: #002CBD;
+	text-decoration: underline;
+}
+
+#main{
+	width: 685px;
+	height: 215px;
+	margin-top: 5px;
+}
+
+#main div{
+	box-sizing: border-box;
+}
+
+#main-nav{
+	width: 685px;
+	height: 15px;
+	background: #CEDCE8;
+	border-bottom: 1px solid #fff;
+	display: flex;
+	color: #607A90;
+	font-family: "MS Mincho";
+	font-size: 10px;
+	text-align: center;
+	line-height: 15px;
+}
+
+#main-nav-fr1{
+	width: 405px;
+	height: 15px;
+	border-right: 1px solid #fff;
+}
+
+#main-nav-fr2{
+	width: 65px;
+	height: 15px;
+	border-right: 1px solid #fff;
+}
+
+#main-nav-fr3{
+	width: 70px;
+	height: 15px;
+	border-right: 1px solid #fff;
+}
+
+#main-nav-fr4{
+	width: 80px;
+	height: 15px;
+	border-right: 1px solid #fff;
+}
+
+#main-nav-fr5{
+	width: 65px;
+	height: 15px;
+	border-right: 1px solid #fff;
+}
+
+
+#main-info{
+	width: 685px;
+	height: 40px;
+	background: #f2F2F2;
+	border: 1px solid #BBB;
+	border-top: none;
+	display: flex;
+}
+
+.main-info{
+	width: 685px;
+	height: 40px;
+	background: #f2F2F2;
+	border: 1px solid #BBB;
+	display: flex;
+}
+
+.main-info-fr1{
+	width: 405px;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	font-weight: bold;
+	line-height: 40px;
+	padding-left: 75px;
+}
+
+.main-info-shi{
+	width: 15px;
+	height: 15px;
+	background: linear-gradient(#4AB9E6,#26A0D9);
+	align-items: center;
+	margin: 0 5px 0 5px;
+}
+
+#six{
+	margin-left: -35px;
+	font-weight: normal;
+	font-family: "宋体";
+}
+
+#main-info-kong{
+	width: 15px;
+	height: 15px;
+	background: linear-gradient(#4AB9E6,#26A0D9);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 5px 0 20px;
+}
+
+#main-info-kong2{
+	width: 10px;
+	height: 10px;
+	background: #fff;
+}
+
+.main-info-fr2{
+	width: 65px;
+	height: 40px;
+	font-family: "宋体";
+	font-size: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: 15px;
+}
+
+.main-info-fr3{
+	width: 215px;
+	height: 40px;
+	margin-right: 15px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-size: 10px;
+	color: #002CBD;
+	text-decoration: underline;
+}
+
+.main-time{
+	width: 685px;
+	height: 40px;
+	display: flex;
+}
+
+.main-time-fr1{
+	width: 100px;
+	height: 40px;
+}
+
+.time-fr1-fram1{
+	width: 100px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	font-family: "宋体";
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.time-fr1-fram2{
+	width: 100px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	font-family: "宋体";
+	font-size: 15px;
+}
+
+.main-time-fr2{
+	width: 5px;
+	height: 40px;
+}
+
+.main-time-fr3{
+	width: 300px;
+	height: 40px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.main-time-fr3 i{
+	margin-left: 5px;
+}
+
+.fa-train{
+	color: #0096F9; 
+}
+
+.fa-bus{
+	color: #028D5E; 
+}
+
+.time-fr3-zi1{
+	font-family: "微软雅黑";
+	margin: 0 10px 0 5px;
+	color: #0096F9; 
+	font-weight: bold;
+}
+
+.time-fr3-zi2{
+	font-family: "宋体";
+	color: #0069A3;
+	font-size: 15px;
+	text-decoration: underline;
+}
+
+.time-fr3-zi3{
+	font-family: "微软雅黑";
+	margin: 0 10px 0 5px;
+	color: #028D5E;
+	font-weight: bold;
+}
+
+.time-fr3-zi4{
+	font-family: "宋体";
+	color: #0069A3;
+	font-size: 15px;
+}
+
+.main-time-fr4{
+	width: 65px;
+	height: 40px;
+	border-left: 1px solid #CDCDCD;
+	border-right: 1px solid #CDCDCD;
+}
+
+.main-time-fr5{
+	width: 70px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	font-family: "宋体";
+	font-weight: bold;
+}
+
+.main-time-fr6{
+	width: 80px;
+	height: 40px;
+	border-left: 1px solid #CDCDCD;
+	border-right: 1px solid #CDCDCD;
+}
+
+.time-fr6-zi{
+	width: 80px;
+	height: 20px;
+	font-size: 10px;
+	text-align: center;
+	line-height: 20px;
+}
+
+.main-time-fr7{
+	width: 65px;
+	height: 40px;
+	font-size: 10px;
+	text-align: center;
+	line-height: 40px;
+}
+
+#tiao{
+	width: 5px;
+	height: 120px;
+	background: #96C7D8;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 103px;
+	margin-top: -160px;
+	position: absolute;
+	z-index: -1;
+}
+
+.tiao-ct{
+	width: 3px;
+	height: 10px;
+	background: #fff;
+	margin-top: 5px;
+}

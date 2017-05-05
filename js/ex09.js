@@ -23,21 +23,35 @@ map.addControl(new BMap.OverviewMapControl());
 map.addControl(new BMap.MapTypeControl()); 
 
 var local = new BMap.LocalSearch(map, {
+	pageCapacity: 6,
   renderOptions: {
     map: map,
     panel: "result",
     autoViewport: true
   }
 });
-local.searchNearby("宾馆", "西湖");
+
 
 var transit = new BMap.TransitRoute(map, {
   renderOptions: {
     map: map,
-    panel: "result"
+    panel: "route"
   }
 });
-transit.search("杭州师范大学仓前新校区", "宾馆");
+local.searchNearby("宾馆", "西湖");
+hznu=new BMap.Point(120.019973,30.294177);
+
+var markerArr=[];
+local.setMarkersSetCallback(function(pois){
+     for(var i=0;i<pois.length;i++){
+        markerArr[i]=pois[i].marker;
+         pois[i].marker.addEventListener("click", function(e){
+         	transit.clearResults(); 
+			transit.search(hznu,this.z.title);
+         });
+          
+     }
+ });
 
 var opts = {
   width: 300, 
